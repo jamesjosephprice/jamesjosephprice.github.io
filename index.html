@@ -125,6 +125,31 @@
         
 			$(".card-body").css("background-color", "#c0c3c6");
 
+
+		   var i = 1 // Don't want to use global variables after watching Douglas Crockford lecture, but it works for now.
+
+		   var brands = [
+                "James Joseph Price, Half-Cocked Con Artist", 
+                "James Joseph Price, Anachronistic Cow Rustler", 
+                "James Joseph Price, Opportunistic Malcontent",
+                "James Joseph Price, anonymous",
+                "James Joseph Price, bootstrap",
+                "James Joseph Price, check",
+                "James Joseph Price, development"
+                ];
+
+            $(".navbar-brand").click(function () {
+           
+                $(".navbar-brand").text(brands[i]);
+
+                if (i === 6) {
+                    i = 0
+                } else {
+                    i = i + 1;
+                };
+
+            }); 
+
 		});
 	</script>
 
