@@ -12,17 +12,38 @@
 
   </head>
   <body>
-	
 
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Navbar</a>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  	</button>
+	  
+  		<div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav">
+			    <li class="nav-item active">
+			    	<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+			    </li>
+			    <li class="nav-item">
+			    	<a class="nav-link" href="blog.html">Blog</a>
+			    </li>
+			    <li class="nav-item">
+		        	<a class="nav-link" href="photos.html">Photos</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link disabled" href="#">Chaos</a>
+		      	</li>
+		    </ul>
+		</div>
+	</nav>
 
   	<div class="container mt-2 text-center">
 		<div class="row">
 			<div class="col-sm-12 col-xs-12">
 				<div class="card">
-   					<div class="card-header text-white bg-theme-blue">Welcome to James's Website</div>
+   					<div class="card-header text-white bg-dark">Welcome to James's Website</div>
      				<div class="card-body">
-				        <p class="card-text text-custom-gray">This website is a work in progress.</p>
-        				<p class="card-text text-custom-gray">Thanks for checking it out!</p>
+				        <p class="card-text">This website is here to help me get a job in web development. I created it with help from the LearnCode.academy "Web Development Tutorials for Beginners" YouTube playlist.</p>
 				    </div>
     			</div>
 			</div>
@@ -33,28 +54,33 @@
 		<div class="row mt-2">
  			<div class="col-sm-6">
    				<div class="card">
-   					<div class="card-header text-white bg-secondary">What's This All About?</div>
+   					<div class="card-header bg-secondary">Want to Read More?</div>
       				<div class="card-body">
-				        <p class="card-text text-custom-gray">
-				        	
-							This website is here to help me get a job in web development. I created it with help from the LearnCode.academy "Web Development Tutorials for Beginners" YouTube playlist.
+				        <p class="card-text">
 
+				        	Click the button below to go to my blog. Or use the new navbar. That thing is super sweet. But if you're already here, might as well just click the button. 
+				        	
 				        </p>
+
+							<a href="blog.html" class="btn btn-secondary">Check Out My New Blog!</a>
+
       				</div>
    				</div>
   			</div>
   			<div class="col-sm-6">
 			    <div class="card">
-			   		<div class="card-header text-white bg-secondary">Need to Hire a Web Developer?</div>
+			   		<div class="card-header  bg-secondary">Need to Hire a Web Developer?</div>
 			      	<div class="card-body">
-				        <p class="card-text text-custom-gray">
+				        <p class="card-text">
 
 							Need to hire someone with no experience and minimal competence? Click the button to go to my
 							LinkedIn page and check out my assortment of unendorsed skills.
 
 
 				        </p>
+
 				        <a href="https://www.linkedin.com/in/jamesjprice" class="btn btn-secondary">Hire Me!</a>
+
 				    </div>
 			    </div>
 			</div>
@@ -64,9 +90,9 @@
 		<div class="row mt-2">
  			<div class="col-sm-12">
    				<div class="card">
-   					<div class="card-header text-white bg-secondary">My Latest Problem</div>
+   					<div class="card-header  bg-secondary">My Latest Problem</div>
       				<div class="card-body">
-				        <p class="card-text text-custom-gray">
+				        <p class="card-text">
 				        	
 							Today I was working on learning Chrome Web Dev Tools at Code School. I ran
 							Chrome's Page Insights Plug In on this site and it said I should enable caching.
@@ -83,21 +109,7 @@
   			</div>
 		</div>
 
-		<div class="row mt-2">
- 			<div class="col-sm-12">
-   				<div class="card">
-   					<div class="card-header text-white bg-secondary">Slapdash Blog Link</div>
-      				<div class="card-body">
-				        <p class="card-text text-custom-gray">
-				        	
-							<a href="blog.html" class="btn btn-secondary">Check Out My New Blog!</a>
-
-
-				        </p>
-      				</div>
-   				</div>
-  			</div>
-		</div>
+		
 	</div>
 	
 	
@@ -108,7 +120,7 @@
     <script>
 		$(document).ready(function() {
         
-			$(".card-body").css("background-color", "#3e5984");
+			$(".card-body").css("background-color", "#c0c3c6");
 
 		});
 	</script>
