@@ -12,15 +12,10 @@
 
   </head>
   <body>
-	
-
-	
+		
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index.html">James Joseph Price, Half-Cocked Con Artist</a>
-		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  	</button>
-
+		<p class="navbar-brand test-2">James Joseph Price, Half-Cocked Con Artist</a>
+		 
   		<div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav ml-auto	">
 			    <li class="nav-item active">
@@ -38,7 +33,6 @@
 		    </ul>
 		</div>
 	</nav>
-
 		
   	<div class="container mt-2 text-center">
 		<div class="row">
@@ -51,8 +45,6 @@
     			</div>
 			</div>
 		</div>
-
-	
 
 		<div class="row mt-2">
  			<div class="col-sm-6">
@@ -75,15 +67,14 @@
 			   		<div class="card-header  bg-secondary">Need to Hire a Web Developer?</div>
 			      	<div class="card-body">
 				        <p class="card-text">
-
+							
 							Need to hire someone with no experience and minimal competence? Click the button to go to my
 							LinkedIn page and check out my assortment of unendorsed skills.
-
-
+				        
 				        </p>
-
+				        
 				        <a href="https://www.linkedin.com/in/jamesjprice" class="btn btn-secondary">Hire Me!</a>
-
+				    
 				    </div>
 			    </div>
 			</div>
@@ -123,34 +114,47 @@
     <script>
 		$(document).ready(function() {
         
+
+        	// This piece of JQuery is here to show that I know how to change CSS with JQuery
 			$(".card-body").css("background-color", "#c0c3c6");
 
+			// The following global variable is set by an immmediately invoked function expression copied from MDN to create a random number, which will then select at random a tagine for my header
+		   	var i = (function getRandomInt(min, max) {
+				  min = Math.ceil(0);
+				  max = Math.floor(8);
+				  return Math.floor(Math.random() * (max - min)) + min; 
+				}())
 
-		   var i = 1 // Don't want to use global variables after watching Douglas Crockford lecture, but it works for now.
+			// Don't want to use global variables after watching Douglas Crockford lecture, but it works for now. Eventually I want to use closure to bind the variables.
+         	var brands = [
 
-		   var brands = [
-                "James Joseph Price, Half-Cocked Con Artist", 
-                "James Joseph Price, Anachronistic Cow Rustler", 
-                "James Joseph Price, Opportunistic Malcontent",
-                "James Joseph Price, anonymous",
-                "James Joseph Price, bootstrap",
-                "James Joseph Price, check",
-                "James Joseph Price, development"
-                ];
+            "Half-Cocked Con Artist", 
+            "Anachronistic Cow Rustler", 
+            "Pedantic Charlatan",
+            "Opportunistic Malcontent",
+            "Gregarious Psychopath",
+            "Altruistic Son of a Bitch",
+            "Impeccable Shirt Wearer",
+            "Undefined"
 
-            $(".navbar-brand").click(function () {
-           
-                $(".navbar-brand").text(brands[i]);
+            ];
 
-                if (i === 6) {
-                    i = 0
-                } else {
-                    i = i + 1;
-                };
+			$(".test-2").text("James Joseph Price, " + brands[i]);
 
-            }); 
+            $(".test-2").click(function () {
+            	
+            	if (i === 7) {
+            		i = 0;
+            	} else {
+ 		           	i = i + 1;
+ 		        };
 
-		});
+                $(".test-2").text("James Joseph Price, " + brands[i]);
+
+            });
+
+        });
+
 	</script>
 
   </body>
