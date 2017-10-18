@@ -14,9 +14,8 @@
   <body>
 		
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-		<p class="navbar-brand test-2">James Joseph Price, Half-Cocked Con Artist</a>
-		 
-  		<div class="collapse navbar-collapse" id="navbarNav">
+		<p class="navbar-brand"></p>
+		<div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav ml-auto	">
 			    <li class="nav-item active">
 			    	<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
@@ -39,9 +38,6 @@
 			<div class="col-sm-12 col-xs-12">
 				<div class="card">
    					<div class="card-header text-white bg-dark">Welcome to James's Website</div>
-     				<div class="card-body">
-				        <p class="card-text">This website is here to help me get a job in web development. I created it with help from the LearnCode.academy "Web Development Tutorials for Beginners" YouTube playlist.</p>
-				    </div>
     			</div>
 			</div>
 		</div>
@@ -49,16 +45,13 @@
 		<div class="row mt-2">
  			<div class="col-sm-6">
    				<div class="card">
-   					<div class="card-header bg-secondary">Want to Read More?</div>
+   					<div class="card-header bg-secondary">What the Hell is This?</div>
       				<div class="card-body">
 				        <p class="card-text">
 
-				        	Click the button below to go to my blog. Or use the new navbar. That thing is super sweet. But if you're already here, might as well just click the button. 
+				        	Hey, prospective employer! I am James Price, the guy who copied and pasted this website into existence. I am learning how to be a web developer by creating this ridiculous hodge podge of divs and contrived content. Good luck finding someone better qualified than me. 
 				        	
 				        </p>
-
-							<a href="blog.html" class="btn btn-secondary">Check Out My New Blog!</a>
-
       				</div>
    				</div>
   			</div>
@@ -79,31 +72,6 @@
 			    </div>
 			</div>
 		</div>
-	
-
-		<div class="row mt-2">
- 			<div class="col-sm-12">
-   				<div class="card">
-   					<div class="card-header  bg-secondary">My Latest Problem</div>
-      				<div class="card-body">
-				        <p class="card-text">
-				        	
-							Today I was working on learning Chrome Web Dev Tools at Code School. I ran
-							Chrome's Page Insights Plug In on this site and it said I should enable caching.
-							That led me to a lot of reading on HTTP headers, but in the end I couldn't figure
-							out how to set my own headers to enable caching. I almost created an .htaccess file,
-							but I don't know if that's the solution.
-							<br>
-							Also, I'm getting a lot of calls and emails because I didn't make my WHOIS info
-							private on my new domain. Hope that goes away...
-
-				        </p>
-      				</div>
-   				</div>
-  			</div>
-		</div>
-
-		
 	</div>
 	
 	
@@ -112,6 +80,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
     <script>
+		
 		$(document).ready(function() {
         
 
@@ -139,9 +108,9 @@
 
             ];
 
-			$(".test-2").text("James Joseph Price, " + brands[i]);
+			$(".navbar-brand").text("James Joseph Price, " + brands[i]);
 
-            $(".test-2").click(function () {
+            $(".navbar-brand").click(function () {
             	
             	if (i === 7) {
             		i = 0;
@@ -149,7 +118,7 @@
  		           	i = i + 1;
  		        };
 
-                $(".test-2").text("James Joseph Price, " + brands[i]);
+                $(".navbar-brand").text("James Joseph Price, " + brands[i]);
 
             });
 

@@ -13,19 +13,15 @@
   </head>
   <body>
 	
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Navbar</a>
-		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  	</button>
-	  
-  		<div class="collapse navbar-collapse" id="navbarNav">
-		    <ul class="navbar-nav">
-			    <li class="nav-item active">
-			    	<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-			    </li>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		<p class="navbar-brand"></p>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav ml-auto	">
 			    <li class="nav-item">
-			    	<a class="nav-link" href="blog.html">Blog</a>
+			    	<a class="nav-link" href="index.html">Home</a>
+			    </li>
+			    <li class="nav-item active">
+			    	<a class="nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
 			    </li>
 			    <li class="nav-item">
 		        	<a class="nav-link" href="photos.html">Photos</a>
@@ -36,26 +32,94 @@
 		    </ul>
 		</div>
 	</nav>
+		
 
   	<div class="container mt-2 text-center">
+		
 		<div class="row">
-			<div class="col-sm-12 col-xs-12">
-				<div class="card">
-   					<div class="card-header text-white bg-theme-blue">Welcome to James's Blog</div>
-     				<div class="card-body">
-				        <p class="card-text text-custom-gray">This website is a work in progress.</p>
-        				<p class="card-text text-custom-gray">Thanks for checking it out!</p>
-				    </div>
-    			</div>
+			<div class="col-sm-12">
+				<div class="card-header text-white bg-dark">
+					Welcome to James's Blog
+				</div>
 			</div>
 		</div>
 
 		<div class="row mt-2">
  			<div class="col-sm-12">
    				<div class="card">
-   					<div class="card-header text-white bg-secondary">Can I Make Another Page?</div>
-      				<div class="card-body">
-				        <p class="card-text text-custom-gray">
+   					<div class="card-header bg-secondary">Messing Around (October 17 2017)</div>
+      				<div class="card-body ta-left">
+				        <p class="card-text">
+				        	
+							I'm usually pretty good at writing blog posts, but right now I don't know what to say. I've been working a lot on this website today, just having a good time with it. But there is so much to be done. Well, that's not the problem, because I enjoy doing it. There is just so little time, that's the problem.
+						
+						</p>
+						<p class="card-text">
+
+							What's clear is that this is no way to make a blog post. I don't even know if real developers use Bootstrap CSS. It seems like a good idea, but what are these cards? And how can I customize them if I don't know what all these classes are that I'm just loading into my web page? I'm using Bootstrap because I am following along with this blog post that tells you how to get a web developer job in five months, and one of the things you have to do is watch this YouTube playlist that's a little on the older side now, and the guy says to use Bootstrap because everybody does. Then he shows you how to create components on your own. So why not just do that?
+
+				        </p>
+				        <p class="card-text">
+
+				        	I don't know why. Who cares. It's fun for now.
+
+				        </p>
+				        <p class="card-text">
+
+				        	What really bothers me is all this repeated code that I have. I have three pages: photos, blog, and a home page, and all three of those has to have the navbar code and the script codes. That can't be right. I guess it gets factored out with JavaScript or something? A lot of websites now are just one page. Maybe clicking the navbar interacts with the DOM. At this point I don't know anything about the DOM. Anyway I guess you could set it up so that you click on a navbar option and some elements are hidden and others are shown?
+
+				        </p>
+				   		<p class="card-text">
+
+				   			For now, I guess I'll just stick with what I'm supposed to be learning, instead of just getting carried away learning how to make this website through inefficient trial and error. There has to be a balance, though, because on this five month plan there aren't any parts where he tells you to go and try what you're learning out. I'm sure that's expected and all, but I'm on a very tight time-frame and I am doing exactly what he says and no more. Well anyway I have been up to now.
+
+				   		</p>
+				   		<p class="card-text">
+
+				   			The reason I stopped doing that today and tried to play around with the website is because I was watching Douglas Crockford's Front End Masters lectures and I realized I had already forgotten what I learned by taking Code School's JavaScript Road Trip class, and in fact I didn't remember much of anything I had learned, and worst of all I didn't have anything to show for the fact that I had actually learned those things at one point but some stupid badges from Code School and freeCodeCamp. Nobody cares about those badges, I'm sure.
+
+				   		</p>
+				   		<p class="card-text">
+
+				   			Well, hopefully they'll come here and see that I am the best copy and paster of Bootstrap CSS ever. Sweet.
+
+				   		</p>
+      				</div>
+   				</div>
+  			</div>
+		</div>
+
+		<div class="row mt-2">
+ 			<div class="col-sm-12">
+   				<div class="card">
+   					<div class="card-header  bg-secondary">My Latest Problem</div>
+      				<div class="card-body ta-left">
+				        <p class="card-text">
+				        	
+							Today I was working on learning Chrome Web Dev Tools at Code School. I ran
+							Chrome's Page Insights Plug In on this site and it said I should enable caching.
+							That led me to a lot of reading on HTTP headers, but in the end I couldn't figure
+							out how to set my own headers to enable caching. I almost created an .htaccess file,
+							but I don't know if that's the solution.
+							
+						</p>
+						<p class="card-text">
+
+							Also, I'm getting a lot of calls and emails because I didn't make my WHOIS info
+							private on my new domain. Hope that goes away...
+
+				        </p>
+      				</div>
+   				</div>
+  			</div>
+		</div>
+
+		<div class="row mt-2">
+ 			<div class="col-sm-12">
+   				<div class="card">
+   					<div class="card-header bg-secondary">Can I Make Another Page?</div>
+      				<div class="card-body ta-left">
+				        <p class="card-text">
 				        	
 							I don't know whether this will work or not, and I don't have time to worry about it. Here is another page of my website where I can write things that only I care about for now. Maybe you will care about them in the future.
 
@@ -65,22 +129,7 @@
   			</div>
 		</div>
 
-		<div class="row mt-2">
- 			<div class="col-sm-12">
-   				<div class="card">
-   					<div class="card-header text-white bg-secondary">Slapdash Home Page Link</div>
-      				<div class="card-body">
-				        <p class="card-text text-custom-gray">
-				        	
-							<a href="index.html" class="btn btn-secondary">Go Back to My Home Page</a>
-
-
-				        </p>
-      				</div>
-   				</div>
-  			</div>
-		</div>
-
+		
 	</div>
 	
 	
@@ -88,14 +137,51 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-    <script> // Here is some JQuery for the sake of having some JQuery
-
+    <script>
+		
 		$(document).ready(function() {
         
-			$(".card-body").css("background-color", "#3e5984");
 
-		});
-	
+        	// This piece of JQuery is here to show that I know how to change CSS with JQuery
+			$(".card-body").css("background-color", "#c0c3c6");
+
+			// The following global variable is set by an immmediately invoked function expression copied from MDN to create a random number, which will then select at random a tagine for my header
+		   	var i = (function getRandomInt(min, max) {
+				  min = Math.ceil(0);
+				  max = Math.floor(8);
+				  return Math.floor(Math.random() * (max - min)) + min; 
+				}())
+
+			// Don't want to use global variables after watching Douglas Crockford lecture, but it works for now. Eventually I want to use closure to bind the variables.
+         	var brands = [
+
+            "Half-Cocked Con Artist", 
+            "Anachronistic Cow Rustler", 
+            "Pedantic Charlatan",
+            "Opportunistic Malcontent",
+            "Gregarious Psychopath",
+            "Altruistic Son of a Bitch",
+            "Impeccable Shirt Wearer",
+            "Undefined"
+
+            ];
+
+			$(".navbar-brand").text("James Joseph Price, " + brands[i]);
+
+            $(".navbar-brand").click(function () {
+            	
+            	if (i === 7) {
+            		i = 0;
+            	} else {
+ 		           	i = i + 1;
+ 		        };
+
+                $(".navbar-brand").text("James Joseph Price, " + brands[i]);
+
+            });
+
+        });
+
 	</script>
 
   </body>
